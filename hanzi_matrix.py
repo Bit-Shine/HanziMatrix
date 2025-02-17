@@ -13,7 +13,7 @@ pygame.display.set_caption('汉字 Matrix')
 
 # 定义颜色
 black = (0, 0, 0)
-green = (0, 255, 0)
+chinese_red = (238, 44, 44)
 
 # 定义字体和字符集
 font_size = 40  # 增大字体大小
@@ -36,7 +36,7 @@ class Character:
         self.character = random.choice(characters)
 
     def draw(self):
-        text_surface = font.render(self.character, True, green)
+        text_surface = font.render(self.character, True, chinese_red)
         screen.blit(text_surface, (self.x, self.y))
 
     def move(self):
